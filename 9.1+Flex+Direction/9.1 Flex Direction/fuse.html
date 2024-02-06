@@ -1,0 +1,437 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fusionist</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+<meta name="description" content="Welcome to future of gaming.">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+<link rel="manifest" href="images/favicons/site.webmanifest">
+<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#000">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+<link rel="preload" as="font" href="fonts/acronymlight.woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/acronymregular.woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/acronymsemibold.woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=1" defer="defer">
+<style>
+		.rd-menu {
+            position: absolute;
+            display: none;
+            top: 2rem;
+            left: auto;
+            background-color: none;
+            color: #9a9a9a;
+            height: 2rem;
+            line-height: 2rem;
+            border-radius: 5px;
+            text-align: left;
+            margin-bottom: 0;
+            transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
+		}
+        .dropdown-item{
+            list-style: none;
+            padding: 0;
+            min-width: 10rem;
+        }
+	</style>
+</head>
+<body><button class="nav-toggle js-nav-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="nav-toggle__cross js-nav-toggle-cross">
+<path d="M2.56 2.535L13.4386 13.4136" stroke="white" stroke-miterlimit="10" />
+<path d="M13.4389 2.58871L2.56034 13.4673" stroke="white" stroke-miterlimit="10" />
+</g>
+<g class="nav-toggle__burger js-nav-toggle-burger">
+<path d="M0.31 3.35L15.6946 3.35" stroke="white" stroke-miterlimit="10" />
+<path d="M0.31 7.96426L15.6946 7.96426" stroke="white" stroke-miterlimit="10" />
+<path d="M0.31 12.579L15.6946 12.579" stroke="white" stroke-miterlimit="10" />
+</g>
+</svg> <span class="sr">Toggle Mobile Navigation</span></button>
+<div class="header-blur-block"></div>
+<header class="header js-header">
+<div class="header__bg js-header-bg">
+<div class="header__bg-inner"></div>
+</div>
+<div class="header__inner js-header-inner"><button class="header__logo | js-header-logo" anchor-link="landing"><svg width="213" height="48" viewBox="0 0 213 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<image width="38.8085" height="48" xlink:href="/images/dala-d.png?id=ef5e37d64e9743b91d7e" />
+<g class="js-header-logo-text-group" clip-path="url(#textClip)">
+<path class="js-header-logo-text" d="M 59.895 11.595 L 59.79 12.645 L 50.2 12.645 A 3.418 3.418 0 0 0 49.327 12.751 A 2.47 2.47 0 0 0 48.188 13.398 A 2.53 2.53 0 0 0 47.471 14.862 A 3.534 3.534 0 0 0 47.435 15.375 L 47.435 35.57 L 46 35.57 L 46 15.165 A 4.07 4.07 0 0 1 46.204 13.85 A 3.434 3.434 0 0 1 47.085 12.47 A 3.694 3.694 0 0 1 49.365 11.443 A 4.982 4.982 0 0 1 49.85 11.42 L 53.228 11.42 Q 54.925 11.42 56.588 11.455 Q 58.25 11.49 59.895 11.595 Z M 46.595 23.46 L 46.595 22.27 L 58.39 22.27 L 58.39 23.46 L 46.595 23.46 Z" fill="white" />
+<path class="js-header-logo-text" d="M 79.88 11.42 L 81.315 11.42 L 81.315 26.575 A 22.901 22.901 0 0 1 81.222 28.706 Q 81.125 29.746 80.925 30.621 A 9.608 9.608 0 0 1 80.493 32.035 A 6.11 6.11 0 0 1 79.441 33.797 A 5.347 5.347 0 0 1 77.85 35.045 Q 76.03 35.99 72.985 35.99 A 16.728 16.728 0 0 1 71.079 35.888 Q 70.123 35.778 69.329 35.55 A 7.144 7.144 0 0 1 68.033 35.045 A 5.484 5.484 0 0 1 65.507 32.351 A 7.034 7.034 0 0 1 65.373 32.035 A 10.016 10.016 0 0 1 64.872 30.299 Q 64.55 28.697 64.55 26.575 L 64.55 11.42 L 65.985 11.42 L 65.985 26.575 A 21.194 21.194 0 0 0 66.059 28.399 Q 66.134 29.268 66.286 30.001 A 8.668 8.668 0 0 0 66.668 31.335 A 5.274 5.274 0 0 0 67.442 32.727 A 4.337 4.337 0 0 0 68.873 33.908 A 6.202 6.202 0 0 0 70.25 34.41 Q 71.413 34.695 72.95 34.695 Q 74.729 34.695 76.011 34.303 A 5.878 5.878 0 0 0 76.993 33.908 A 4.463 4.463 0 0 0 78.951 31.894 A 5.921 5.921 0 0 0 79.198 31.335 A 8.81 8.81 0 0 0 79.6 29.898 Q 79.749 29.145 79.819 28.255 A 21.568 21.568 0 0 0 79.88 26.575 L 79.88 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 100.95 11.525 L 100.81 12.575 Q 99.27 12.505 97.608 12.418 Q 95.945 12.33 94.265 12.33 Q 93.059 12.33 92.11 12.392 A 20.495 20.495 0 0 0 91.553 12.435 Q 90.599 12.523 89.929 12.857 A 3.077 3.077 0 0 0 89.68 12.995 A 2.329 2.329 0 0 0 88.893 13.82 A 3.329 3.329 0 0 0 88.613 14.448 Q 88.312 15.349 88.283 16.949 A 19.343 19.343 0 0 0 88.28 17.3 A 11.921 11.921 0 0 0 88.338 18.521 Q 88.499 20.073 89.103 20.87 Q 89.758 21.734 91.135 22.11 A 7.183 7.183 0 0 0 91.885 22.27 L 97.135 23.145 A 8.906 8.906 0 0 1 98.576 23.465 Q 99.325 23.704 99.892 24.068 A 3.772 3.772 0 0 1 100.915 25.018 Q 102 26.505 102 29.585 A 15.19 15.19 0 0 1 101.947 30.894 Q 101.893 31.517 101.784 32.042 A 6.184 6.184 0 0 1 101.51 32.998 A 4.715 4.715 0 0 1 101.021 33.952 A 3.447 3.447 0 0 1 100.075 34.905 A 4.889 4.889 0 0 1 98.943 35.456 Q 98.386 35.647 97.73 35.745 A 17.515 17.515 0 0 1 96.424 35.888 Q 95.739 35.938 94.966 35.951 A 32.181 32.181 0 0 1 94.44 35.955 A 64.672 64.672 0 0 1 93.165 35.942 Q 92.512 35.929 91.784 35.903 A 113.489 113.489 0 0 1 91.29 35.885 A 33.811 33.811 0 0 1 89.635 35.777 Q 88.791 35.702 87.86 35.584 A 57.301 57.301 0 0 1 87.23 35.5 L 87.335 34.415 A 163.732 163.732 0 0 0 88.434 34.486 Q 88.868 34.513 89.262 34.535 A 89.937 89.937 0 0 0 90.013 34.573 A 76.686 76.686 0 0 0 91.67 34.632 A 67.853 67.853 0 0 0 92.2 34.643 Q 93.25 34.66 94.51 34.66 A 24.322 24.322 0 0 0 95.801 34.607 Q 97.037 34.522 97.906 34.306 A 7.184 7.184 0 0 0 98.028 34.275 A 3.358 3.358 0 0 0 99.007 33.849 A 2.783 2.783 0 0 0 99.935 32.84 Q 100.474 31.858 100.525 29.985 A 14.735 14.735 0 0 0 100.53 29.585 A 14.147 14.147 0 0 0 100.494 28.543 Q 100.418 27.513 100.179 26.815 A 4.085 4.085 0 0 0 100.163 26.768 A 3.39 3.39 0 0 0 99.7 25.882 A 2.848 2.848 0 0 0 98.973 25.193 Q 98.15 24.65 96.785 24.475 L 91.535 23.6 A 8.109 8.109 0 0 1 90.132 23.271 Q 88.628 22.763 87.878 21.693 Q 87.115 20.605 86.897 18.812 A 12.858 12.858 0 0 1 86.81 17.265 Q 86.81 15.875 87.003 14.849 A 6.616 6.616 0 0 1 87.265 13.853 Q 87.72 12.575 88.63 11.963 A 4.333 4.333 0 0 1 89.665 11.46 Q 90.138 11.3 90.696 11.212 A 7.863 7.863 0 0 1 90.958 11.175 Q 92.375 11 94.23 11.035 Q 95.91 11.07 97.608 11.175 Q 99.305 11.28 100.95 11.525 Z" fill="white" />
+<path class="js-header-logo-text" d="M 107.53 11.42 L 108.965 11.42 L 108.965 35.57 L 107.53 35.57 L 107.53 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 124.05 11 Q 126.57 11 128.32 11.648 Q 130.07 12.295 131.12 13.765 Q 132.17 15.235 132.643 17.615 A 21.689 21.689 0 0 1 132.931 19.558 Q 133.115 21.308 133.115 23.495 A 43.08 43.08 0 0 1 133.049 25.963 Q 132.981 27.136 132.845 28.146 A 20.062 20.062 0 0 1 132.643 29.375 A 13.216 13.216 0 0 1 132.207 31.032 Q 131.776 32.306 131.12 33.225 Q 130.07 34.695 128.32 35.343 Q 126.57 35.99 124.05 35.99 Q 121.53 35.99 119.78 35.343 Q 118.03 34.695 116.98 33.225 Q 116.083 31.969 115.594 30.047 A 15.044 15.044 0 0 1 115.44 29.375 A 20.966 20.966 0 0 1 115.142 27.433 Q 115.025 26.366 114.979 25.137 A 44.373 44.373 0 0 1 114.95 23.495 A 41.546 41.546 0 0 1 115.019 21.028 Q 115.089 19.855 115.23 18.844 A 19.404 19.404 0 0 1 115.44 17.615 Q 115.834 15.701 116.591 14.375 A 7.118 7.118 0 0 1 116.98 13.765 Q 118.03 12.295 119.78 11.648 Q 121.53 11 124.05 11 Z M 124.05 12.295 A 12.238 12.238 0 0 0 122.318 12.41 Q 121.42 12.539 120.682 12.812 A 5.609 5.609 0 0 0 119.57 13.363 Q 118.061 14.342 117.318 16.484 A 9.796 9.796 0 0 0 117.19 16.88 A 14.492 14.492 0 0 0 116.773 18.761 Q 116.455 20.758 116.455 23.495 Q 116.455 27.66 117.19 30.11 A 8.373 8.373 0 0 0 117.803 31.631 Q 118.276 32.522 118.934 33.132 A 4.7 4.7 0 0 0 119.57 33.628 A 5.962 5.962 0 0 0 121.22 34.353 Q 122.444 34.695 124.05 34.695 A 11.926 11.926 0 0 0 125.831 34.57 Q 126.761 34.43 127.522 34.13 A 5.676 5.676 0 0 0 128.513 33.628 A 5.042 5.042 0 0 0 130.102 31.96 Q 130.509 31.287 130.792 30.433 A 9.651 9.651 0 0 0 130.893 30.11 Q 131.603 27.685 131.61 23.581 A 48.01 48.01 0 0 0 131.61 23.495 A 39.622 39.622 0 0 0 131.54 21.059 Q 131.386 18.564 130.893 16.88 A 8.137 8.137 0 0 0 130.271 15.328 Q 129.772 14.393 129.057 13.771 A 4.678 4.678 0 0 0 128.513 13.363 A 6.118 6.118 0 0 0 126.806 12.624 Q 125.603 12.295 124.05 12.295 Z" fill="white" />
+<path class="js-header-logo-text" d="M 155.025 11.42 L 156.46 11.42 L 156.46 34.87 A 1.008 1.008 0 0 1 156.426 35.147 Q 156.337 35.458 156.019 35.54 A 1.031 1.031 0 0 1 155.76 35.57 L 153.87 35.57 A 1.067 1.067 0 0 1 153.657 35.55 A 0.761 0.761 0 0 1 153.398 35.448 Q 153.237 35.346 153.114 35.134 A 1.52 1.52 0 0 1 153.065 35.045 L 142.635 15.305 A 542.566 542.566 0 0 1 142.311 14.693 A 640.316 640.316 0 0 1 141.97 14.045 Q 141.62 13.38 141.34 12.715 L 140.535 12.715 Q 140.57 13.38 140.57 14.045 L 140.57 15.34 L 140.57 35.57 L 139.135 35.57 L 139.135 12.12 A 1.008 1.008 0 0 1 139.17 11.843 Q 139.259 11.532 139.576 11.45 A 1.031 1.031 0 0 1 139.835 11.42 L 141.585 11.42 A 1.327 1.327 0 0 1 141.787 11.435 Q 141.966 11.462 142.093 11.543 Q 142.253 11.645 142.377 11.856 A 1.52 1.52 0 0 1 142.425 11.945 L 152.575 31.23 A 76.401 76.401 0 0 1 153.163 32.319 A 86.588 86.588 0 0 1 153.363 32.7 Q 153.765 33.47 154.15 34.24 L 155.025 34.24 L 155.025 32.578 L 155.025 30.95 L 155.025 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 163.355 11.42 L 164.79 11.42 L 164.79 35.57 L 163.355 35.57 L 163.355 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 184.6 11.525 L 184.46 12.575 Q 182.92 12.505 181.258 12.418 Q 179.595 12.33 177.915 12.33 Q 176.709 12.33 175.76 12.392 A 20.495 20.495 0 0 0 175.203 12.435 Q 174.249 12.523 173.579 12.857 A 3.077 3.077 0 0 0 173.33 12.995 A 2.329 2.329 0 0 0 172.543 13.82 A 3.329 3.329 0 0 0 172.263 14.448 Q 171.962 15.349 171.933 16.949 A 19.343 19.343 0 0 0 171.93 17.3 A 11.921 11.921 0 0 0 171.988 18.521 Q 172.149 20.073 172.753 20.87 Q 173.408 21.734 174.785 22.11 A 7.183 7.183 0 0 0 175.535 22.27 L 180.785 23.145 A 8.906 8.906 0 0 1 182.226 23.465 Q 182.975 23.704 183.542 24.068 A 3.772 3.772 0 0 1 184.565 25.018 Q 185.65 26.505 185.65 29.585 A 15.19 15.19 0 0 1 185.597 30.894 Q 185.543 31.517 185.434 32.042 A 6.184 6.184 0 0 1 185.16 32.998 A 4.715 4.715 0 0 1 184.671 33.952 A 3.447 3.447 0 0 1 183.725 34.905 A 4.889 4.889 0 0 1 182.593 35.456 Q 182.036 35.647 181.38 35.745 A 17.515 17.515 0 0 1 180.074 35.888 Q 179.389 35.938 178.616 35.951 A 32.181 32.181 0 0 1 178.09 35.955 A 64.672 64.672 0 0 1 176.815 35.942 Q 176.162 35.929 175.434 35.903 A 113.489 113.489 0 0 1 174.94 35.885 A 33.811 33.811 0 0 1 173.285 35.777 Q 172.441 35.702 171.51 35.584 A 57.301 57.301 0 0 1 170.88 35.5 L 170.985 34.415 A 163.732 163.732 0 0 0 172.084 34.486 Q 172.518 34.513 172.912 34.535 A 89.937 89.937 0 0 0 173.663 34.573 A 76.686 76.686 0 0 0 175.32 34.632 A 67.853 67.853 0 0 0 175.85 34.643 Q 176.9 34.66 178.16 34.66 A 24.322 24.322 0 0 0 179.451 34.607 Q 180.687 34.522 181.556 34.306 A 7.184 7.184 0 0 0 181.678 34.275 A 3.358 3.358 0 0 0 182.657 33.849 A 2.783 2.783 0 0 0 183.585 32.84 Q 184.124 31.858 184.175 29.985 A 14.735 14.735 0 0 0 184.18 29.585 A 14.147 14.147 0 0 0 184.144 28.543 Q 184.068 27.513 183.829 26.815 A 4.085 4.085 0 0 0 183.813 26.768 A 3.39 3.39 0 0 0 183.35 25.882 A 2.848 2.848 0 0 0 182.623 25.193 Q 181.8 24.65 180.435 24.475 L 175.185 23.6 A 8.109 8.109 0 0 1 173.782 23.271 Q 172.278 22.763 171.528 21.693 Q 170.765 20.605 170.547 18.812 A 12.858 12.858 0 0 1 170.46 17.265 Q 170.46 15.875 170.653 14.849 A 6.616 6.616 0 0 1 170.915 13.853 Q 171.37 12.575 172.28 11.963 A 4.333 4.333 0 0 1 173.315 11.46 Q 173.788 11.3 174.346 11.212 A 7.863 7.863 0 0 1 174.608 11.175 Q 176.025 11 177.88 11.035 Q 179.56 11.07 181.258 11.175 Q 182.955 11.28 184.6 11.525 Z" fill="white" />
+<path class="js-header-logo-text" d="M 196.92 11.42 L 198.355 11.42 L 198.355 35.57 L 196.92 35.57 L 196.92 11.42 Z M 188.625 11.42 L 206.685 11.42 L 206.685 12.68 L 188.625 12.68 L 188.625 11.42 Z" fill="white" />
+</g>
+<clipPath id="textClip">
+<rect width="174.1915" height="28" x="38.8085" fill="white" y="10" />
+</clipPath>
+</svg> <span class="sr">Fusionist</span></button>
+<div class="header__cta mr-4"></div>
+<h1 class="sr">Fusionist</h1>
+<nav class="nav js-nav">
+<div class="nav__bg js-nav-bg">
+<div class="nav__bg-inner"></div>
+</div>
+<ul class="nav__list js-nav-list  nav_dropdown">
+<li class="nav__item | js-nav-item" section-name="Endurance"><a href="https://ace.fusionist.io/" aria-label="Endurance" class="nav__link js-nav-link" anchor-link="Endurance"> Endurance </a>
+</li>
+<li class="nav__item | js-nav-item" section-name="Twitter"><a href="https://twitter.com/fusionistio" aria-label="Twitter" class="nav__link js-nav-link" anchor-link="Home"> Twitter </a>
+</li>
+<li class="nav__item | js-nav-item" section-name="Discord"><a href="https://discord.gg/fusionist" aria-label="Discord" class="nav__link js-nav-link" anchor-link="Discord" target="_blank">Discord</a>
+
+
+
+</ul>
+</nav>
+</div>
+</header>
+
+<div class="site-loader | js-site-loader">
+<div class="site-loader__background"></div>
+<div class="site-loader__content">
+<div class="site-loader__main">
+<div class="site-loader__spinner | js-site-loader-spinner"><svg class="site-loader__spinner-svg | js-site-loader-spinner-svg" width="142" height="141" viewBox="0 0 142 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="63.6035" width="14.7917" height="14.7917" fill="white" />
+<rect x="63.6035" y="125.729" width="14.7917" height="14.7917" fill="white" />
+<rect x="142" y="62.125" width="14.7917" height="14.7917" transform="rotate(90 142 62.125)" fill="white" />
+<rect x="16.2715" y="62.125" width="14.7917" height="16.2708" transform="rotate(90 16.2715 62.125)" fill="white" />
+</svg></div>
+<div class="site-loader__heading | js-site-loader-heading">
+<div class="site-loader__heading-text">
+<div class="site-loader__heading-inner | js-site-loader-heading-text">Welcome to the future of gaming.</div>
+</div>
+</div>
+</div>
+<div class="site-loader__info d-flex justify-between items-end">
+<div class="site-loader__loading">
+<div class="d-flex overflow-hidden">
+<div class="site-loader__loading-text | js-site-loader-loading-text">Syncing</div>
+</div><span class="site-loader__ellipsis | js-site-loader-ellipses">
+<div class="site-loader__ellipsis-wrapper | js-site-loader-ellipses-wrapper"><span style="display: inline;">.</span> <span style="display: inline;">.</span> <span style="display: inline;">.</span></div>
+</span>
+</div>
+<div class="site-loader__completed | js-site-loader-completed-text"><span>Initializing</span></div>
+<div class="site-loader__progress | js-site-loader-progress"><span class="js-site-loader-progress-digit"></span> <span class="js-site-loader-progress-digit"></span> <span class="js-site-loader-progress-digit">0</span></div>
+</div>
+</div>
+</div>
+<div class="nav-transition-mask-bg | js-nav-transition-mask-bg"></div>
+<div class="nav-transition-mask js-nav-transition-mask">
+<div class="nav-transition-mask__spinner | js-nav-transition-mask-spinner"><svg class="nav-transition-mask__spinner-svg | js-nav-transition-mask-spinner-svg" width="142" height="141" viewBox="0 0 142 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="63.6035" width="14.7917" height="14.7917" fill="white" />
+<rect x="63.6035" y="125.729" width="14.7917" height="14.7917" fill="white" />
+<rect x="142" y="62.125" width="14.7917" height="14.7917" transform="rotate(90 142 62.125)" fill="white" />
+<rect x="16.2715" y="62.125" width="14.7917" height="16.2708" transform="rotate(90 16.2715 62.125)" fill="white" />
+</svg></div>
+</div>
+<div asscroll-container>
+<main>
+<div anchor-target="landing"></div>
+<div class="section landing | js-section" section-name="landing">
+<h2 class="landing__title t-56 t-80@xs t-104@sm t-150@md t-lh-0.9 -t-ls-0.03 t-400 mb-1.5 t-lh-1.1 mb-1" animate-from="preset: 'splitTextRotateIn', delay: 0, duration: 1, scrollTrigger: { children: 'span' }">
+<span class="d-block">Fusionist</span> </h2>
+<div class="mobile-blur mt-0 mb-auto">
+<div class="landing__body">
+<div class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-yellow" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8"></div>
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 1, duration: 1">
+Human greed has destroyed Earth.  Selflessness will save humanity.  Your consciousness fused into machine, you venture into the universe. </p>
+<div class="investor">
+<div class="d-flex" animate-from="yPercent: 200, rotate: 0, ease: 'expo.out', duration: 1, delay: 1.5"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request Access" href="https://twitter.com/fusionistio" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Twitter</span>
+<div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+</a></div>
+<div class="d-flex" animate-from="yPercent: 200, rotate: 0, ease: 'expo.out', duration: 1, delay: 1.5"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request Access" href="https://discord.gg/fusionist" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Discord</span>
+<div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section section--tall introduction | js-section">
+<div class="mobile-blur">
+<h2 class="introduction__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Multi-Game Universe</h2>
+<p class="introduction__body t-24 t-lh-1.5 -t-ls-0.02 t-200" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.2, duration: 0.3, scrollTrigger: { start: 'top bottom' }">
+The definitive sci-fi game trilogy built from the ground up on top of earth's most advanced web3 protocol will take gaming to the next level.  </p>
+</div>
+</div>
+<div class="js-section" section-name="manifesto">
+<div class="manifesto--introduction-container" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="smMax">
+<div class="section manifesto--introduction">
+<div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+<p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">Game I: Colonize</p>
+
+<img class="section-manifesto__image" src="images/game/Game1.jpg" alt="Portrait of Haroun Hickman" loading="lazy">
+</div>
+</div>
+<div class="section manifesto--introduction">
+<div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+<p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">Game II: Conquer</p>
+
+<img class="section-manifesto__image" src="images/game/Game2.jpg" alt="Portrait of Haroun Hickman" loading="lazy">
+</div>
+</div>
+<div class="section manifesto--introduction">
+<div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+<p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">Game III: Unite</p>
+
+<img class="section-manifesto__image" src="images/game/Game3.jpg" alt="Portrait of Haroun Hickman" loading="lazy">
+</div>
+</div>
+</div>
+</div>
+<div class="section section--tall manifesto manifesto--section items-end@md js-section" section-name="manifesto">
+<div class="manifesto__inner mobile-blur">
+<h2 class="manifesto__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">?</h2>
+<div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.2, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200"><div class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-blue" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.3, duration: 0.7"> ???<!--$TFO - The Fusionist Order-->
+</div><p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">
+...</p>
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200"><div class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.3, duration: 0.5"> ???<!--$FPC - Fusionist Power Cell-->
+</div><p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">
+...</p>
+</div>
+</div>
+</div>
+<div class="section section--tall manifesto manifesto--section items-start@md js-section" section-name="manifesto">
+<div class="manifesto__inner mobile-blur">
+<h2 class="manifesto__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Next-Gen Gaming</h2>
+<div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.3, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Fusionist will raise the quality benchmark of web3 games by leveraging our extensive experience using the most advanced game development methodologies and technologies, having delivered world-class entertainment for decades.</p>
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Fusing tried-and-true game mechanics with interconnected economy design, Fusionist will bring the best of both worlds together so you can profit through your play in the most fun possible way.</p>
+</div>
+</div>
+</div>
+<div class="section js-section js-team-section mb-1" section-name="team" anchor-target="team">
+<div class="team">
+<div class="team__head js-team-head" animate-mq="sm" animate-from="y: '-5vw', scrollTrigger: { scrub: 0.5, once: false, start: 'top bottom' }">
+<h2 class="t-56 t-lh-1 t-64@sm t-lh-1.2@sm t-104@md t-lh-1.1@md -t-ls-0.03 t-400 mb-2@xs mb-2.5@sm mb-3@md" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Core Team
+</h2>
+</div>
+<div class="team-slider | js-slider">
+<div class="team-slider__slides-container">
+<ul class="team-slider__slides | js-slides">
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Haroun Hickman">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+</li>
+<li class="team-card | js-slide" slide-id="Poppy Reid">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy">
+</div>
+</li>
+<li class="team-card | js-slide" slide-id="Joel Kang">
+<div class="team-card__inner"><img class="team-card__image | js-slide-image" src="images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+</li>
+</ul>
+</div>
+<ul class="team-slider__content">
+<li class="team-slider__content__item">
+<div class="team-card__content | js-slide-content" slide-id="Haroun Hickman"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Game Director</span>
+<h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">
+Ike T.</h3>
+<div class="team-card__social"><a class="team-card__social__link | js-social-icon" href="https://www.linkedin.com/in/ikewitht/" target="_blank" rel="noopener"><span class="sr">Linkedin</span> <svg class="team-card__social__icon team-card__social__icon--linkedin">
+<use xlink:href="images/svgsprite.svg#linkedin2"></use>
+</svg></a>
+</div>
+<div class="team_introduction" style="padding-top: 20px;display: none; ">
+<ul>
+<li>1 7 years of experience in the games industry</li>
+<li>Serial Entrepreneur for 8 years</li>
+<li>Producer of 2 games with over 1 million DAU</li>
+<li>Ex. Tencent</li>
+<li>Ex. Moonton</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="team-slider__content__item">
+<div class="team-card__content | js-slide-content" slide-id="Poppy Reid"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Technology Director</span>
+<h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">
+Charles D.</h3>
+<div class="team_introduction" style="padding-top: 20px;display: none;">
+<ul>
+<li>11 years of experience in the games industry</li>
+<li>Full stack programmer</li>
+<li>Lead programmer @Moonton</li>
+<li>Ex. Moonton</li>
+<li>Ex. The 9</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="team-slider__content__item">
+<div class="team-card__content | js-slide-content" slide-id="Joel Kang"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Partnerships</span>
+<h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">
+Daniel F.</h3>
+<div class="team-card__social"><a class="team-card__social__link | js-social-icon" href="https://www.linkedin.com/in/daniel-fang-9a709510/" target="_blank" rel="noopener"><span class="sr">Linkedin</span> <svg class="team-card__social__icon team-card__social__icon--linkedin">
+<use xlink:href="images/svgsprite.svg#linkedin2"></use>
+</svg></a></div>
+<div class="team_introduction" style="padding-top: 20px;">
+<ul>
+<li>16 years of experience in the games industry</li>
+<li>Well-versed in communications and community building</li>
+<li>Twitter and Discord enthusiast</li>
+<li>Ex. Tencent</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<div class="team-slider__controls"><button class="team-slider__control team-slider__previous | js-slider-prev"><span class="sr">Previous</span>
+<div class="team-slider__control-bg | js-slider-prev-bg"></div>
+<div class="team-slider__control-hover | js-slider-prev-hover"></div><svg>
+<use xlink:href="images/svgsprite.svg#arrow"></use>
+</svg>
+</button> <button class="team-slider__control team-slider__next | js-slider-next"><span class="sr">Next</span>
+<div class="team-slider__control-bg | js-slider-next-bg"></div>
+<div class="team-slider__control-hover | js-slider-next-hover"></div><svg>
+<use xlink:href="images/svgsprite.svg#arrow"></use>
+</svg>
+</button></div>
+</div>
+<div animate-from="y: '-5vw', scrollTrigger: { trigger: '.js-team-head', scrub: 0.3, once: false, start: 'top bottom' }">
+<h3 class="t-36 t-lh-1 -t-ls-0.03 t-400 mt-5@sm" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.3, duration: 0.8, scrollTrigger: { start: 'top bottom' }">
+Band of Veterans</h3>
+<div class="team__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+<p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Collectively as a team we have created games that have been enjoyed by millions of players from around the world. We came together to form Fusionist because of our passion for the web3 technologies enable and our love of games.</p>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="section footer | js-section">
+<div class="footer__head">
+<h2 class="t-40 t-lh-1 t-48@sm t-lh-1.2@sm t-64@md t-lh-1.1@md -t-ls-0.03 t-400 mb-2" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }"><p><p>Ready for the journey? Join the community.
+<p>
+<div class="overflow-hidden">
+<div class="d-flex justify-center"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Discord" href="https://discord.com/invite/fusionist" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Join Now</span>
+<div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+</a> </div></h2></p>
+</div>
+<div class="d-flex justify-center"></div>
+</div>
+<div class="footer__bar">
+<div class="footer__logo"><svg width="213" height="48" viewBox="0 0 213 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<image width="38.8085" height="48" xlink:href="/images/dala-d.png?id=ef5e37d64e9743b91d7e" />
+<g class="js-header-logo-text-group" clip-path="url(#textClip)">
+<path class="js-header-logo-text" d="M 59.895 11.595 L 59.79 12.645 L 50.2 12.645 A 3.418 3.418 0 0 0 49.327 12.751 A 2.47 2.47 0 0 0 48.188 13.398 A 2.53 2.53 0 0 0 47.471 14.862 A 3.534 3.534 0 0 0 47.435 15.375 L 47.435 35.57 L 46 35.57 L 46 15.165 A 4.07 4.07 0 0 1 46.204 13.85 A 3.434 3.434 0 0 1 47.085 12.47 A 3.694 3.694 0 0 1 49.365 11.443 A 4.982 4.982 0 0 1 49.85 11.42 L 53.228 11.42 Q 54.925 11.42 56.588 11.455 Q 58.25 11.49 59.895 11.595 Z M 46.595 23.46 L 46.595 22.27 L 58.39 22.27 L 58.39 23.46 L 46.595 23.46 Z" fill="white" />
+<path class="js-header-logo-text" d="M 79.88 11.42 L 81.315 11.42 L 81.315 26.575 A 22.901 22.901 0 0 1 81.222 28.706 Q 81.125 29.746 80.925 30.621 A 9.608 9.608 0 0 1 80.493 32.035 A 6.11 6.11 0 0 1 79.441 33.797 A 5.347 5.347 0 0 1 77.85 35.045 Q 76.03 35.99 72.985 35.99 A 16.728 16.728 0 0 1 71.079 35.888 Q 70.123 35.778 69.329 35.55 A 7.144 7.144 0 0 1 68.033 35.045 A 5.484 5.484 0 0 1 65.507 32.351 A 7.034 7.034 0 0 1 65.373 32.035 A 10.016 10.016 0 0 1 64.872 30.299 Q 64.55 28.697 64.55 26.575 L 64.55 11.42 L 65.985 11.42 L 65.985 26.575 A 21.194 21.194 0 0 0 66.059 28.399 Q 66.134 29.268 66.286 30.001 A 8.668 8.668 0 0 0 66.668 31.335 A 5.274 5.274 0 0 0 67.442 32.727 A 4.337 4.337 0 0 0 68.873 33.908 A 6.202 6.202 0 0 0 70.25 34.41 Q 71.413 34.695 72.95 34.695 Q 74.729 34.695 76.011 34.303 A 5.878 5.878 0 0 0 76.993 33.908 A 4.463 4.463 0 0 0 78.951 31.894 A 5.921 5.921 0 0 0 79.198 31.335 A 8.81 8.81 0 0 0 79.6 29.898 Q 79.749 29.145 79.819 28.255 A 21.568 21.568 0 0 0 79.88 26.575 L 79.88 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 100.95 11.525 L 100.81 12.575 Q 99.27 12.505 97.608 12.418 Q 95.945 12.33 94.265 12.33 Q 93.059 12.33 92.11 12.392 A 20.495 20.495 0 0 0 91.553 12.435 Q 90.599 12.523 89.929 12.857 A 3.077 3.077 0 0 0 89.68 12.995 A 2.329 2.329 0 0 0 88.893 13.82 A 3.329 3.329 0 0 0 88.613 14.448 Q 88.312 15.349 88.283 16.949 A 19.343 19.343 0 0 0 88.28 17.3 A 11.921 11.921 0 0 0 88.338 18.521 Q 88.499 20.073 89.103 20.87 Q 89.758 21.734 91.135 22.11 A 7.183 7.183 0 0 0 91.885 22.27 L 97.135 23.145 A 8.906 8.906 0 0 1 98.576 23.465 Q 99.325 23.704 99.892 24.068 A 3.772 3.772 0 0 1 100.915 25.018 Q 102 26.505 102 29.585 A 15.19 15.19 0 0 1 101.947 30.894 Q 101.893 31.517 101.784 32.042 A 6.184 6.184 0 0 1 101.51 32.998 A 4.715 4.715 0 0 1 101.021 33.952 A 3.447 3.447 0 0 1 100.075 34.905 A 4.889 4.889 0 0 1 98.943 35.456 Q 98.386 35.647 97.73 35.745 A 17.515 17.515 0 0 1 96.424 35.888 Q 95.739 35.938 94.966 35.951 A 32.181 32.181 0 0 1 94.44 35.955 A 64.672 64.672 0 0 1 93.165 35.942 Q 92.512 35.929 91.784 35.903 A 113.489 113.489 0 0 1 91.29 35.885 A 33.811 33.811 0 0 1 89.635 35.777 Q 88.791 35.702 87.86 35.584 A 57.301 57.301 0 0 1 87.23 35.5 L 87.335 34.415 A 163.732 163.732 0 0 0 88.434 34.486 Q 88.868 34.513 89.262 34.535 A 89.937 89.937 0 0 0 90.013 34.573 A 76.686 76.686 0 0 0 91.67 34.632 A 67.853 67.853 0 0 0 92.2 34.643 Q 93.25 34.66 94.51 34.66 A 24.322 24.322 0 0 0 95.801 34.607 Q 97.037 34.522 97.906 34.306 A 7.184 7.184 0 0 0 98.028 34.275 A 3.358 3.358 0 0 0 99.007 33.849 A 2.783 2.783 0 0 0 99.935 32.84 Q 100.474 31.858 100.525 29.985 A 14.735 14.735 0 0 0 100.53 29.585 A 14.147 14.147 0 0 0 100.494 28.543 Q 100.418 27.513 100.179 26.815 A 4.085 4.085 0 0 0 100.163 26.768 A 3.39 3.39 0 0 0 99.7 25.882 A 2.848 2.848 0 0 0 98.973 25.193 Q 98.15 24.65 96.785 24.475 L 91.535 23.6 A 8.109 8.109 0 0 1 90.132 23.271 Q 88.628 22.763 87.878 21.693 Q 87.115 20.605 86.897 18.812 A 12.858 12.858 0 0 1 86.81 17.265 Q 86.81 15.875 87.003 14.849 A 6.616 6.616 0 0 1 87.265 13.853 Q 87.72 12.575 88.63 11.963 A 4.333 4.333 0 0 1 89.665 11.46 Q 90.138 11.3 90.696 11.212 A 7.863 7.863 0 0 1 90.958 11.175 Q 92.375 11 94.23 11.035 Q 95.91 11.07 97.608 11.175 Q 99.305 11.28 100.95 11.525 Z" fill="white" />
+<path class="js-header-logo-text" d="M 107.53 11.42 L 108.965 11.42 L 108.965 35.57 L 107.53 35.57 L 107.53 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 124.05 11 Q 126.57 11 128.32 11.648 Q 130.07 12.295 131.12 13.765 Q 132.17 15.235 132.643 17.615 A 21.689 21.689 0 0 1 132.931 19.558 Q 133.115 21.308 133.115 23.495 A 43.08 43.08 0 0 1 133.049 25.963 Q 132.981 27.136 132.845 28.146 A 20.062 20.062 0 0 1 132.643 29.375 A 13.216 13.216 0 0 1 132.207 31.032 Q 131.776 32.306 131.12 33.225 Q 130.07 34.695 128.32 35.343 Q 126.57 35.99 124.05 35.99 Q 121.53 35.99 119.78 35.343 Q 118.03 34.695 116.98 33.225 Q 116.083 31.969 115.594 30.047 A 15.044 15.044 0 0 1 115.44 29.375 A 20.966 20.966 0 0 1 115.142 27.433 Q 115.025 26.366 114.979 25.137 A 44.373 44.373 0 0 1 114.95 23.495 A 41.546 41.546 0 0 1 115.019 21.028 Q 115.089 19.855 115.23 18.844 A 19.404 19.404 0 0 1 115.44 17.615 Q 115.834 15.701 116.591 14.375 A 7.118 7.118 0 0 1 116.98 13.765 Q 118.03 12.295 119.78 11.648 Q 121.53 11 124.05 11 Z M 124.05 12.295 A 12.238 12.238 0 0 0 122.318 12.41 Q 121.42 12.539 120.682 12.812 A 5.609 5.609 0 0 0 119.57 13.363 Q 118.061 14.342 117.318 16.484 A 9.796 9.796 0 0 0 117.19 16.88 A 14.492 14.492 0 0 0 116.773 18.761 Q 116.455 20.758 116.455 23.495 Q 116.455 27.66 117.19 30.11 A 8.373 8.373 0 0 0 117.803 31.631 Q 118.276 32.522 118.934 33.132 A 4.7 4.7 0 0 0 119.57 33.628 A 5.962 5.962 0 0 0 121.22 34.353 Q 122.444 34.695 124.05 34.695 A 11.926 11.926 0 0 0 125.831 34.57 Q 126.761 34.43 127.522 34.13 A 5.676 5.676 0 0 0 128.513 33.628 A 5.042 5.042 0 0 0 130.102 31.96 Q 130.509 31.287 130.792 30.433 A 9.651 9.651 0 0 0 130.893 30.11 Q 131.603 27.685 131.61 23.581 A 48.01 48.01 0 0 0 131.61 23.495 A 39.622 39.622 0 0 0 131.54 21.059 Q 131.386 18.564 130.893 16.88 A 8.137 8.137 0 0 0 130.271 15.328 Q 129.772 14.393 129.057 13.771 A 4.678 4.678 0 0 0 128.513 13.363 A 6.118 6.118 0 0 0 126.806 12.624 Q 125.603 12.295 124.05 12.295 Z" fill="white" />
+<path class="js-header-logo-text" d="M 155.025 11.42 L 156.46 11.42 L 156.46 34.87 A 1.008 1.008 0 0 1 156.426 35.147 Q 156.337 35.458 156.019 35.54 A 1.031 1.031 0 0 1 155.76 35.57 L 153.87 35.57 A 1.067 1.067 0 0 1 153.657 35.55 A 0.761 0.761 0 0 1 153.398 35.448 Q 153.237 35.346 153.114 35.134 A 1.52 1.52 0 0 1 153.065 35.045 L 142.635 15.305 A 542.566 542.566 0 0 1 142.311 14.693 A 640.316 640.316 0 0 1 141.97 14.045 Q 141.62 13.38 141.34 12.715 L 140.535 12.715 Q 140.57 13.38 140.57 14.045 L 140.57 15.34 L 140.57 35.57 L 139.135 35.57 L 139.135 12.12 A 1.008 1.008 0 0 1 139.17 11.843 Q 139.259 11.532 139.576 11.45 A 1.031 1.031 0 0 1 139.835 11.42 L 141.585 11.42 A 1.327 1.327 0 0 1 141.787 11.435 Q 141.966 11.462 142.093 11.543 Q 142.253 11.645 142.377 11.856 A 1.52 1.52 0 0 1 142.425 11.945 L 152.575 31.23 A 76.401 76.401 0 0 1 153.163 32.319 A 86.588 86.588 0 0 1 153.363 32.7 Q 153.765 33.47 154.15 34.24 L 155.025 34.24 L 155.025 32.578 L 155.025 30.95 L 155.025 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 163.355 11.42 L 164.79 11.42 L 164.79 35.57 L 163.355 35.57 L 163.355 11.42 Z" fill="white" />
+<path class="js-header-logo-text" d="M 184.6 11.525 L 184.46 12.575 Q 182.92 12.505 181.258 12.418 Q 179.595 12.33 177.915 12.33 Q 176.709 12.33 175.76 12.392 A 20.495 20.495 0 0 0 175.203 12.435 Q 174.249 12.523 173.579 12.857 A 3.077 3.077 0 0 0 173.33 12.995 A 2.329 2.329 0 0 0 172.543 13.82 A 3.329 3.329 0 0 0 172.263 14.448 Q 171.962 15.349 171.933 16.949 A 19.343 19.343 0 0 0 171.93 17.3 A 11.921 11.921 0 0 0 171.988 18.521 Q 172.149 20.073 172.753 20.87 Q 173.408 21.734 174.785 22.11 A 7.183 7.183 0 0 0 175.535 22.27 L 180.785 23.145 A 8.906 8.906 0 0 1 182.226 23.465 Q 182.975 23.704 183.542 24.068 A 3.772 3.772 0 0 1 184.565 25.018 Q 185.65 26.505 185.65 29.585 A 15.19 15.19 0 0 1 185.597 30.894 Q 185.543 31.517 185.434 32.042 A 6.184 6.184 0 0 1 185.16 32.998 A 4.715 4.715 0 0 1 184.671 33.952 A 3.447 3.447 0 0 1 183.725 34.905 A 4.889 4.889 0 0 1 182.593 35.456 Q 182.036 35.647 181.38 35.745 A 17.515 17.515 0 0 1 180.074 35.888 Q 179.389 35.938 178.616 35.951 A 32.181 32.181 0 0 1 178.09 35.955 A 64.672 64.672 0 0 1 176.815 35.942 Q 176.162 35.929 175.434 35.903 A 113.489 113.489 0 0 1 174.94 35.885 A 33.811 33.811 0 0 1 173.285 35.777 Q 172.441 35.702 171.51 35.584 A 57.301 57.301 0 0 1 170.88 35.5 L 170.985 34.415 A 163.732 163.732 0 0 0 172.084 34.486 Q 172.518 34.513 172.912 34.535 A 89.937 89.937 0 0 0 173.663 34.573 A 76.686 76.686 0 0 0 175.32 34.632 A 67.853 67.853 0 0 0 175.85 34.643 Q 176.9 34.66 178.16 34.66 A 24.322 24.322 0 0 0 179.451 34.607 Q 180.687 34.522 181.556 34.306 A 7.184 7.184 0 0 0 181.678 34.275 A 3.358 3.358 0 0 0 182.657 33.849 A 2.783 2.783 0 0 0 183.585 32.84 Q 184.124 31.858 184.175 29.985 A 14.735 14.735 0 0 0 184.18 29.585 A 14.147 14.147 0 0 0 184.144 28.543 Q 184.068 27.513 183.829 26.815 A 4.085 4.085 0 0 0 183.813 26.768 A 3.39 3.39 0 0 0 183.35 25.882 A 2.848 2.848 0 0 0 182.623 25.193 Q 181.8 24.65 180.435 24.475 L 175.185 23.6 A 8.109 8.109 0 0 1 173.782 23.271 Q 172.278 22.763 171.528 21.693 Q 170.765 20.605 170.547 18.812 A 12.858 12.858 0 0 1 170.46 17.265 Q 170.46 15.875 170.653 14.849 A 6.616 6.616 0 0 1 170.915 13.853 Q 171.37 12.575 172.28 11.963 A 4.333 4.333 0 0 1 173.315 11.46 Q 173.788 11.3 174.346 11.212 A 7.863 7.863 0 0 1 174.608 11.175 Q 176.025 11 177.88 11.035 Q 179.56 11.07 181.258 11.175 Q 182.955 11.28 184.6 11.525 Z" fill="white" />
+<path class="js-header-logo-text" d="M 196.92 11.42 L 198.355 11.42 L 198.355 35.57 L 196.92 35.57 L 196.92 11.42 Z M 188.625 11.42 L 206.685 11.42 L 206.685 12.68 L 188.625 12.68 L 188.625 11.42 Z" fill="white" />
+</g>
+<clipPath id="textClip">
+<rect width="174.1915" height="28" x="38.8085" fill="white" y="10" />
+</clipPath>
+</svg> <span class="sr">Fusionist</span></div>
+<div class="footer__copyright"><span class="footer__copyright__item">© 2023 Fusion Interactive
+Ltd.</span> <span class="footer__copyright__item">All rights reserved.</span></div>
+<ul class="footer__nav">
+
+<li class="footer__nav__item | js-nav-item" section-name="Privacy"><a class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" href="privacy.html" target="_blank" rel="noopener">Privacy</a></li>
+<li class="footer__nav__item | js-nav-item" section-name="Terms of use"><a class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" href="terms-of-use.html" target="_blank" rel="noopener">Terms of use</a></li>
+</ul>
+<div class="footer__social"><a class="footer__social__link" href="https://discord.com/invite/fusionist" rel="noopener" target="_blank"><span class="sr">LinkedIn</span> <svg class="footer__social__icon footer__social__icon--linkedin">
+<use xlink:href="/images/svgsprite.svg#linkedin"></use>
+</svg> </a><a class="footer__social__link" href="https://twitter.com/fusionistio" rel="noopener" target="_blank"><span class="sr">Twitter</span> <svg class="footer__social__icon footer__social__icon--twitter">
+<use xlink:href="/images/svgsprite.svg#twitter"></use>
+
+</svg></a></div>
+</div>
+</div>
+<div style="position: absolute; left: 0; bottom: -1px; width: 2px; height: 2px;"></div>
+</main>
+</div>
+<div class="fixed fill w-1/1 h-1/1 z-negative user-select-none pointer-events-none"><canvas id="canvas"></canvas>
+</div>
+<script src="scripts/manifest.js"></script>
+<script src="scripts/vendor.js"></script>
+<script src="scripts/theme.js"></script>
+<script src="scripts/jquery-3.5.0.min.js"></script>
+<script>
+       $(document).ready(function(){
+            $(".nav_dropdown li").mouseenter(function(){
+                $(this).find("ul").show();
+            }).mouseleave(function(){
+                $(this).find("ul").hide();
+            }) 
+            $(".team-slider__previous,.team-slider__next").click(() => { 
+                $(".team_introduction").hide()
+                $('.team-slider__content__item').each(function(){
+                    const _self  =this
+                    setTimeout(() => {
+                        if($(_self).css('pointer-events') === 'auto'){
+                            
+                            $(_self).find('.team_introduction').show(500) 
+                        } 
+                    }, 500) 
+                })
+            }) 
+            setTimeout(() => {
+                $(".team-slider__next").click()
+            }, 3000)
+         });
+     </script>
+</body>
+</html>
